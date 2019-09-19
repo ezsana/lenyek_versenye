@@ -5,11 +5,14 @@ public abstract class Leny {
     protected String name;
     protected boolean elo = true;
     protected int reachedDistance = 0;
-    protected int initialWaterQuantity;
     protected int waterQuantity;
 
     Leny(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     boolean isLenyAlive() {
@@ -28,5 +31,15 @@ public abstract class Leny {
         if (isLenyAlive()) {
             changeReachedDistance(idojaras);
         }
+    }
+
+    int getReachedDistance() {
+        return this.reachedDistance;
+    }
+
+    @Override
+    public String toString() {
+        return "A lény neve: " + this.getName() + ", a megtett táv: " + this.getReachedDistance() + ", vízmennyisége: " +
+                this.waterQuantity + ".";
     }
 }

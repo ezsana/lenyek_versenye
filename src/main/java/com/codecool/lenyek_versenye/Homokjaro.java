@@ -7,7 +7,7 @@ public class Homokjaro extends Leny {
     Homokjaro(String name) {
         super(name);
         maxWaterQuantity = 8;
-        initialWaterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
+        waterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
     }
 
     @Override

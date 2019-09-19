@@ -7,7 +7,7 @@ public class Szivacs extends Leny {
     Szivacs(String name) {
         super(name);
         maxWaterQuantity = 20;
-        this.initialWaterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
+        this.waterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
     }
 
     @Override

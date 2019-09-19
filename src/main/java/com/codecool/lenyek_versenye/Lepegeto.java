@@ -7,7 +7,7 @@ public class Lepegeto extends Leny {
     Lepegeto(String name) {
         super(name);
         maxWaterQuantity = 12;
-        initialWaterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
+        waterQuantity = RandomNumberGenerator.getRandomNumber(1, maxWaterQuantity);
     }
 
     @Override
